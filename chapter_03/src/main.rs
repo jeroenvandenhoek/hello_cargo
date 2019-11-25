@@ -8,8 +8,24 @@ fn main() {
 
     println!("and printing the number {}",five());   
 
+    looper();
+
 }
 
 fn five() -> u8 {
     5
+}
+
+fn looper() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 6
+        }
+    };
+
+    println!("The result is {}", result);
 }
