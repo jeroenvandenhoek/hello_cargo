@@ -6,6 +6,10 @@ fn main() {
 
     println!("{}",test_array[1]);
 
-    
+    println!("and printing the number {}",five());   
 
+}
+
+fn five() -> u8 {
+    5
 }
