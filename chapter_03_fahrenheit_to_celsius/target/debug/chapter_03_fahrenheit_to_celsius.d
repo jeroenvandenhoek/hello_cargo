@@ -1,0 +1,1 @@
+/root/rust_projects/chapter_03_fahrenheit_to_celsius/target/debug/chapter_03_fahrenheit_to_celsius: /root/rust_projects/chapter_03_fahrenheit_to_celsius/src/main.rs
