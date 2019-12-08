@@ -1,3 +1,4 @@
+#[derive(Debug)]
 enum Coin {
     Rijksdaalder,
     Gulden,
@@ -16,13 +17,14 @@ impl Coin {
         }
     }
     fn print_cents (coin: Coin){
-        let num_cents = Coin::value_in_cents(coin);
+       let num_cents = Coin::value_in_cents(coin);
         println!("number of cents in coin = {}", num_cents);
     
     }
 }
 
 fn main() {
-    let Stuiver: Coin = Coin::Stuiver;
-    Coin::print_cents(Stuiver)
+    let stuiver: Coin = Coin::Stuiver;
+    println!("{:#?}",stuiver);
+    Coin::print_cents(stuiver);
 }
