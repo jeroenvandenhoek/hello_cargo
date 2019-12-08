@@ -9,6 +9,10 @@ impl Rectangle {
         self.width * self.height
     }
 
+    fn hello_world(){
+        println!("Hello world")
+    
+    }
 }
 
 fn main() {
@@ -16,5 +20,7 @@ fn main() {
 
     println!("The area of the rectangle is {} square pixels.", rect1.area());
     println!("rect1 = {:#?}", rect1);
+
+    Rectangle::hello_world()
 }
 
