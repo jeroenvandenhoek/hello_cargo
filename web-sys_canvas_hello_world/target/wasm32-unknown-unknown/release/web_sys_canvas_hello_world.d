@@ -1,0 +1,1 @@
+/Users/Jeroen/git-projects-jeroen/rust_learning/web-sys_canvas_hello_world/target/wasm32-unknown-unknown/release/web_sys_canvas_hello_world.wasm: /Users/Jeroen/git-projects-jeroen/rust_learning/web-sys_canvas_hello_world/src/lib.rs
