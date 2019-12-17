@@ -7,6 +7,9 @@ use std::panic;
 
 #[wasm_bindgen(start)]
 pub fn start() {
+    use web_sys::console;
+
+
     panic::set_hook(Box::new(console_error_panic_hook::hook));
     let document = web_sys::window().unwrap().document().unwrap();
     let canvas = document.get_element_by_id("canvas").unwrap();
@@ -14,6 +17,10 @@ pub fn start() {
         .dyn_into::<web_sys::HtmlCanvasElement>()
         .map_err(|_| ())
         .unwrap();
+    
+    // testing console log
+    let hi: &str = "hello";
+    console::log_1(&hi.into());
 
     let context = canvas
         .get_context("2d")
